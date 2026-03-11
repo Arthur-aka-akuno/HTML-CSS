@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Starjedi';
+    src: url('../fontes/starjedi/Starjedi.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Starjhol';
+    src: url('../fontes/starjedi/Starjhol.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --FontePadrão: Verdana, Geneva, Tahoma, sans-serif;
+    --FontePrin: 'Starjedi', cursive;
+    --FonteDestaque: 'Starjhol', cursive;
+}
+
+* {
+    font-family: var(--FontePrin);
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+header > h1 {
+    color: rgb(129, 0, 0);
+    padding-top: 30px;
+    font-variant: small-caps;
+    letter-spacing: 50px;
+    font-size: 130px;
+}
+
+header > p {
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    color: red;
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    letter-spacing: 5px;
+    font-size: 60px;
+}
+
+section.texto {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.412);
+    background-color: rgb(128, 128, 128);
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section > p {
+    display: inline-block;
+    padding: 5px;
+    padding-bottom: 1em;
+    text-shadow: 1px 1px 0px black;
+}
+
+p.sla {
+    padding-bottom: 200px;
+}
+
+p#bruh {
+    transform: translate(250%, 0%);
+}
+
+section#img1 {
+    background-image: url('../imagens/ui\ aura.jpg');
+    
+}
+
+
+section#img2 {
+    background-image: url('../imagens/Darth\ vader\ noooooooooooo.jpg');
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 10px;
+}
